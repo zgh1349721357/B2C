@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+"-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+		<!-- 打印查询语句 -->
+	<settings>
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias alias="UserModel" type="com.situ.mall.sys.model.UserModel" />
+		<typeAlias alias="DictModel" type="com.situ.mall.sys.model.DictModel" />
+		<typeAlias alias="ProductModel" type="com.situ.mall.product.model.ProductModel" />
+		<typeAlias alias="ProductPicModel" type="com.situ.mall.product.model.ProductPicModel" />
+		<typeAlias alias="OrderModel" type="com.situ.mall.order.model.OrderModel" />
+		<typeAlias alias="AddrModel" type="com.situ.mall.sys.model.AddrModel" />
+		<typeAlias alias="UserCrmModel" type="com.situ.crm.grant.model.UserCrmModel" />
+		<typeAlias alias="OrderCarModel" type="com.situ.mall.order.model.OrderCarModel" />
+		<typeAlias alias="OrderProdModel" type="com.situ.mall.order.model.OrderProdModel" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="com/situ/mall/sys/mapper/UserMapper.xml" />
+		<mapper resource="com/situ/mall/sys/mapper/DictMapper.xml" />
+		<mapper resource="com/situ/mall/product/mapper/ProductMapper.xml" />
+		<mapper resource="com/situ/mall/product/mapper/ProdPicMapper.xml" />
+		<mapper resource="com/situ/mall/order/mapper/OrderMapper.xml" />
+		<mapper resource="com/situ/crm/grant/mapper/UserCrmMapper.xml" />
+		<mapper resource="com/situ/mall/order/mapper/OrderCarMapper.xml" />
+		<mapper resource="com/situ/mall/order/mapper/OrderProdMapper.xml" />
+	</mappers>
+</configuration>
